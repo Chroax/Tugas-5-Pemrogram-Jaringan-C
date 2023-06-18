@@ -1,0 +1,11 @@
+wrk -c 1000 -t 10 http://localhost:55555/ > result/asynchronous/10.txt
+wrk -c 1000 -t 50 http://localhost:55555/ > result/asynchronous/50.txt
+wrk -c 1000 -t 100 http://localhost:55555/ > result/asynchronous/100.txt
+wrk -c 1000 -t 150 http://localhost:55555/ > result/asynchronous/150.txt
+wrk -c 1000 -t 200 http://localhost:55555/ > result/asynchronous/200.txt
+
+wrk -c 1000 -t 10 http://localhost:44444/ > result/server_pool/10.txt
+wrk -c 1000 -t 50 http://localhost:44444/ > result/server_pool/50.txt
+wrk -c 1000 -t 100 http://localhost:44444/ > result/server_pool/100.txt
+wrk -c 1000 -t 150 http://localhost:44444/ > result/server_pool/150.txt
+wrk -c 1000 -t 200 http://localhost:44444/ > result/server_pool/200.txt
